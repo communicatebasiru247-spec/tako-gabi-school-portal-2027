@@ -1,10 +1,13 @@
+
 {
   "hosting": {
+    "site": "tako-gabi-school-portal-2027",
     "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      ".github/**"
     ]
   }
-}￼Enter
+}
