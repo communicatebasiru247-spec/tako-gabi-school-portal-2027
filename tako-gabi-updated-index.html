@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Official website of Tako Gabi Nursery, Primary and Secondary School, Lafiagi, Kwara State.">
+<title>Tako Gabi Nursery, Primary and Secondary School Lafiagi</title>
+<style>
+:root{--blue:#123c7a;--light:#edf4ff;--gold:#f4b942;--dark:#14243b;--muted:#64748b;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{background:var(--blue);color:white;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:19px;font-weight:800}.logo span{display:block;color:var(--gold);font-size:11px;letter-spacing:2px}
+nav{display:flex;gap:15px;flex-wrap:wrap;font-size:13px}nav a:hover{color:var(--gold)}
+.hero{min-height:440px;padding:80px 7%;background:linear-gradient(90deg,rgba(5,28,62,.92),rgba(5,28,62,.48)),url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400') center/cover;color:white;display:flex;align-items:center}
+.hero-content{max-width:650px}.hero small{color:var(--gold);font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:clamp(32px,6vw,55px);line-height:1.15;margin:15px 0}.hero p{font-size:16px;margin-bottom:25px}
+.btn{display:inline-block;padding:12px 21px;border:0;border-radius:6px;font-weight:bold;margin:5px;background:var(--gold);color:#15243b;cursor:pointer}
+.btn.secondary{background:white;color:var(--blue)}
+section{padding:62px 6%}.heading{text-align:center;margin-bottom:32px}
+.heading small{color:#d18b14;font-weight:bold;text-transform:uppercase;letter-spacing:2px}
+.heading h2{font-size:30px;color:var(--blue);margin:5px}.heading p{color:var(--muted)}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.intro img{width:100%;height:300px;object-fit:cover;border-radius:12px}
+.intro h2{color:var(--blue);font-size:28px;margin-bottom:15px}.intro p{color:var(--muted);margin-bottom:12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 18px #00000012}
+.card img{width:100%;height:180px;object-fit:cover}.card-content{padding:20px}
+.card h3{color:var(--blue);margin-bottom:8px}.card p{font-size:14px;color:var(--muted)}
+.blue-section{background:var(--light)}
+.mission{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.mission article{background:white;padding:28px;border-radius:12px;border-left:5px solid var(--gold)}
+.mission h3{color:var(--blue);margin-bottom:12px;font-size:23px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+.gallery-item p{font-weight:bold;margin-top:8px;color:var(--blue)}
+.news-date{color:#c48a18;font-weight:bold;font-size:12px;margin-bottom:8px}
+.admission{background:linear-gradient(120deg,#123c7a,#2463aa);color:white;text-align:center}
+.admission h2{font-size:30px;margin-bottom:12px}.admission p{margin-bottom:20px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-box{padding:25px;background:var(--light);border-radius:12px}
+.contact-box h3{color:var(--blue);margin-bottom:12px}.contact-box p{margin:8px 0}
+.form-wrap{max-width:850px;margin:auto;background:#fff;padding:25px;border-radius:14px;box-shadow:0 5px 24px #102b5018}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+label{font-size:13px;font-weight:bold;color:#263b58}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:7px;font:inherit;background:#fff;color:var(--dark)}
+input:focus,select:focus,textarea:focus{outline:2px solid #9dbbe8;border-color:var(--blue)}
+textarea{min-height:90px;resize:vertical}
+.help{font-size:12px;color:var(--muted)}
+.notice{padding:13px;border-radius:8px;background:#fff8e7;color:#694b08;font-size:13px;margin:15px 0}
+.result{display:none;margin-top:18px;padding:16px;border-radius:9px;background:#eaf8ef;color:#14532d;overflow-wrap:anywhere}
+.error{display:none;margin-top:15px;padding:13px;border-radius:8px;background:#fff0f0;color:#991b1b}
+.portal-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.portal-links .portal-card{padding:22px;background:white;border:1px solid #dce5f1;border-radius:10px;text-align:center;font-weight:bold;color:var(--blue)}
+footer{background:#0b1e38;color:white;padding:35px 6%;text-align:center}
+footer p{font-size:13px;margin:8px 0;color:#cbd5e1}
+button:disabled{opacity:.6;cursor:not-allowed}
+@media(max-width:700px){header{justify-content:center;text-align:center}nav{justify-content:center}.intro,.mission,.contact,.form-grid{grid-template-columns:1fr}section{padding:46px 5%}.hero{padding:60px 6%}.field.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">TAKO GABI<span>QUALITY EDUCATION FOR A BETTER FUTURE</span></div>
+  <nav>
+    <a href="#home">Home</a><a href="#about">About Us</a><a href="#mission">Mission &amp; Vision</a>
+    <a href="#news">News</a><a href="#gallery">Gallery</a><a href="#admission">Admissions</a>
+    <a href="#contact">Contact</a><a href="#portal">Portal</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero" id="home"><div class="hero-content">
+  <small>WELCOME TO TAKO GABI SCHOOL</small>
+  <h1>Building Bright Minds For A Brighter Future</h1>
+  <p>Welcome to Tako Gabi Nursery, Primary and Secondary School Lafiagi. We are committed to providing quality education and developing confident, responsible and successful future leaders.</p>
+  <a href="#apply" class="btn">Apply For Admission</a><a href="#about" class="btn secondary">Explore Our School</a>
+</div></div>
+
+<section id="about"><div class="intro">
+  <div><small style="color:#c48a18;font-weight:bold">ABOUT OUR SCHOOL</small>
+    <h2>Welcome to Tako Gabi Nursery, Primary and Secondary School Lafiagi</h2>
+    <p>Our school provides an educational environment where children can learn, grow, discover their talents and prepare for a successful future.</p>
+    <p>We believe in academic excellence, discipline, good character, creativity and the development of every child.</p>
+    <a href="#contact" class="btn">Contact Our School</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900" alt="School classroom">
+</div></section>
+
+<section class="blue-section" id="mission"><div class="heading"><small>OUR FOUNDATION</small><h2>Our Mission &amp; Vision</h2><p>The principles guiding our educational journey.</p></div>
+  <div class="mission">
+    <article><h3>Our Mission</h3><p>To provide accessible, quality and comprehensive education that develops knowledgeable, disciplined, creative and responsible individuals who can contribute positively to society.</p></article>
+    <article><h3>Our Vision</h3><p>To become a centre of educational excellence, nurturing future leaders with strong academic foundations, good morals, practical skills and the confidence to succeed in a changing world.</p></article>
+  </div>
+</section>
+
+<section id="news"><div class="heading"><small>STAY INFORMED</small><h2>Latest School News</h2><p>School announcements, activities and important updates.</p></div>
+  <div class="cards">
+    <article class="card"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700" alt="Students learning"><div class="card-content"><div class="news-date">SCHOOL NEWS</div><h3>Welcome to Our School Website</h3><p>Visit our official website for school information, announcements and updates.</p></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=700" alt="School activities"><div class="card-content"><div class="news-date">SCHOOL ACTIVITIES</div><h3>Learning Beyond the Classroom</h3><p>We encourage learning, creativity, teamwork and participation in school activities.</p></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=700" alt="Books and education"><div class="card-content"><div class="news-date">EDUCATION</div><h3>Promoting Academic Excellence</h3><p>We encourage students to develop a passion for reading, learning and discovery.</p></div></article>
+  </div>
+</section>
+
+<section class="blue-section" id="gallery"><div class="heading"><small>OUR SCHOOL COMMUNITY</small><h2>School Gallery</h2><p>A glimpse into our learning environment.</p></div>
+  <div class="cards gallery">
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700" alt="Students in classroom"><p>Our Students</p></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=700" alt="Classroom learning"><p>Classroom Learning</p></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700" alt="Computer laboratory"><p>Computer Laboratory</p></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=700" alt="School library"><p>Reading and Learning</p></div>
+  </div>
+  <p style="text-align:center;margin-top:22px;color:#65738a;font-size:13px">These are illustrative photographs. Replace them with actual school photographs when available.</p>
+</section>
+
+<section class="admission" id="admission"><h2>Give Your Child A Bright Future</h2><p>Apply online for admission into our Nursery, Primary or Secondary section.</p><a href="#apply" class="btn">Start Application</a><a href="tel:09121515675" class="btn secondary">Call The School</a></section>
+
+<section id="apply" class="blue-section">
+  <div class="heading"><small>ONLINE APPLICATION</small><h2>Admission Application Form</h2><p>Complete the form below. Fields marked * are required.</p></div>
+  <div class="form-wrap">
+    <div class="notice"><strong>Please note:</strong> Submitting this form creates a pending application; it does not mean admission has been approved. Keep the application number shown after submission.</div>
+    <form id="admissionForm">
+      <div class="form-grid">
+        <div class="field"><label for="surname">Surname *</label><input id="surname" name="surname" required maxlength="60" autocomplete="family-name"></div>
+        <div class="field"><label for="otherNames">First and other names *</label><input id="otherNames" name="otherNames" required maxlength="100" autocomplete="given-name"></div>
+        <div class="field"><label for="dob">Date of birth *</label><input id="dob" name="dob" type="date" required></div>
+        <div class="field"><label for="gender">Gender *</label><select id="gender" name="gender" required><option value="">Select gender</option><option>Male</option><option>Female</option></select></div>
+        <div class="field"><label for="section">School section *</label><select id="section" name="section" required><option value="">Select section</option><option value="Nursery">Nursery</option><option value="Primary">Primary</option><option value="Secondary">Secondary</option></select></div>
+        <div class="field"><label for="classApplying">Class applying for *</label><select id="classApplying" name="classApplying" required disabled><option value="">Select section first</option></select></div>
+        <div class="field"><label for="guardianName">Parent/guardian full name *</label><input id="guardianName" name="guardianName" required maxlength="120"></div>
+        <div class="field"><label for="guardianPhone">Parent/guardian phone *</label><input id="guardianPhone" name="guardianPhone" type="tel" required maxlength="20" placeholder="e.g. 08012345678"></div>
+        <div class="field"><label for="guardianEmail">Parent/guardian email (optional)</label><input id="guardianEmail" name="guardianEmail" type="email" maxlength="120"></div>
+        <div class="field"><label for="previousSchool">Previous school (if any)</label><input id="previousSchool" name="previousSchool" maxlength="150"></div>
+        <div class="field full"><label for="homeAddress">Home address *</label><textarea id="homeAddress" name="homeAddress" required maxlength="500"></textarea></div>
+        <div class="field full"><label for="extraInfo">Additional information (optional)</label><textarea id="extraInfo" name="extraInfo" maxlength="500"></textarea></div>
+      </div>
+      <p class="help" style="margin-top:12px">Please check that the parent/guardian phone number is correct before submitting.</p>
+      <button class="btn" id="submitBtn" type="submit">Submit Admission Application</button>
+      <div class="result" id="successMessage" role="status" aria-live="polite"></div>
+      <div class="error" id="errorMessage" role="alert"></div>
+    </form>
+  </div>
+</section>
+
+<section id="portal"><div class="heading"><small>ONLINE SCHOOL SERVICES</small><h2>School Portal</h2><p>Student, teacher and administrator portals are being developed.</p></div>
+  <div class="portal-links">
+    <div class="portal-card">🎓<br>Student Portal<br><small>Coming in the next development stage</small></div>
+    <div class="portal-card">👨‍🏫<br>Teacher Portal<br><small>Coming in the next development stage</small></div>
+    <div class="portal-card">🔐<br>Admin Portal<br><small>Coming in the next development stage</small></div>
+  </div>
+</section>
+
+<section class="blue-section" id="contact"><div class="heading"><small>GET IN TOUCH</small><h2>Contact Our School</h2><p>We welcome enquiries from parents, guardians and prospective students.</p></div>
+  <div class="contact">
+    <div class="contact-box"><h3>School Information</h3><p><strong>School:</strong> Tako Gabi Nursery, Primary and Secondary School Lafiagi</p><p><strong>Address:</strong> Tako Gabi Area, Lafiagi, Edu Local Government Area, Kwara State, Nigeria.</p><p><strong>Phone:</strong> 09121515675</p></div>
+    <div class="contact-box"><h3>Speak With Us</h3><p>For admission enquiries and other school information, contact us directly.</p><a href="tel:09121515675" class="btn">Call School</a><a href="https://wa.me/2349121515675" class="btn">WhatsApp Us</a></div>
+  </div>
+</section>
+</main>
+
+<footer><h3>TAKO GABI SCHOOL LAFIAGI</h3><p>Nursery, Primary and Secondary School</p><p>Education • Discipline • Excellence</p><p>Address: Tako Gabi Area, Lafiagi, Edu LGA, Kwara State.</p><p>Contact: 09121515675</p><p>© <span id="year"></span> Tako Gabi School. All Rights Reserved.</p></footer>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+/*
+  IMPORTANT:
+  Replace the placeholder values below with your Firebase WEB APP config.
+  Firebase Console > Project settings > General > Your apps > Web app.
+  Never paste a Firebase service-account private key in this file.
+*/
+const firebaseConfig = {
+  apiKey: "PASTE_YOUR_FIREBASE_WEB_API_KEY",
+  authDomain: "tako-gabi-school-portal.firebaseapp.com",
+  projectId: "tako-gabi-school-portal",
+  storageBucket: "tako-gabi-school-portal.firebasestorage.app",
+  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID",
+  appId: "PASTE_YOUR_FIREBASE_APP_ID"
+};
+
+const form = document.getElementById("admissionForm");
+const submitBtn = document.getElementById("submitBtn");
+const successBox = document.getElementById("successMessage");
+const errorBox = document.getElementById("errorMessage");
+const sectionSelect = document.getElementById("section");
+const classSelect = document.getElementById("classApplying");
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const classOptions = {
+  Nursery: ["Creche", "Nursery 1", "Nursery 2", "Nursery 3"],
+  Primary: ["Primary 1", "Primary 2", "Primary 3", "Primary 4", "Primary 5", "Primary 6"],
+  Secondary: ["JSS 1", "JSS 2", "JSS 3", "SS 1", "SS 2", "SS 3"]
+};
+
+sectionSelect.addEventListener("change", () => {
+  classSelect.innerHTML = '<option value="">Select class</option>';
+  const options = classOptions[sectionSelect.value] || [];
+  options.forEach(name => {
+    const option = document.createElement("option");
+    option.value = name;
+    option.textContent = name;
+    classSelect.appendChild(option);
+  });
+  classSelect.disabled = options.length === 0;
+});
+
+function showError(message) {
+  errorBox.textContent = message;
+  errorBox.style.display = "block";
+  successBox.style.display = "none";
+}
+function showSuccess(message) {
+  successBox.textContent = message;
+  successBox.style.display = "block";
+  errorBox.style.display = "none";
+}
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  errorBox.style.display = "none";
+  successBox.style.display = "none";
+
+  if (firebaseConfig.apiKey.startsWith("PASTE_") ||
+      firebaseConfig.messagingSenderId.startsWith("PASTE_") ||
+      firebaseConfig.appId.startsWith("PASTE_")) {
+    showError("Firebase setup is not complete yet. Add your Firebase WEB APP configuration in this file before accepting applications.");
+    return;
+  }
+
+  if (!form.reportValidity()) return;
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Submitting...";
+
+  try {
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Create a unique Firestore document ID before saving.
+    const applicationRef = doc(collection(db, "admissionApplications"));
+    const applicationNumber = `TG-${new Date().getFullYear()}-${applicationRef.id.slice(0, 8).toUpperCase()}`;
+
+    const application = {
+      applicationNumber,
+      surname: form.surname.value.trim(),
+      otherNames: form.otherNames.value.trim(),
+      dateOfBirth: form.dob.value,
+      gender: form.gender.value,
+      section: form.section.value,
+      classApplyingFor: form.classApplying.value,
+      guardianName: form.guardianName.value.trim(),
+      guardianPhone: form.guardianPhone.value.trim(),
+      guardianEmail: form.guardianEmail.value.trim(),
+      previousSchool: form.previousSchool.value.trim(),
+      homeAddress: form.homeAddress.value.trim(),
+      additionalInformation: form.extraInfo.value.trim(),
+      status: "Pending",
+      submittedAt: serverTimestamp()
+    };
+
+    await setDoc(applicationRef, application);
+
+    form.reset();
+    classSelect.innerHTML = '<option value="">Select section first</option>';
+    classSelect.disabled = true;
+    showSuccess(`Your application was submitted successfully. Your application number is ${applicationNumber}. Please save this number and contact the school if you need assistance. Your application is currently PENDING review.`);
+  } catch (error) {
+    console.error("Admission submission error:", error);
+    showError("We could not submit your application. Please check your internet connection and Firebase Firestore setup, then try again. If the problem continues, contact the school.");
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit Admission Application";
+  }
+});
+</script>
+</body>
+</html>
