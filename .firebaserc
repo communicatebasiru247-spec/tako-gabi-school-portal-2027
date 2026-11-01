@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tako-gabi-school-portal"
+  },
+  "targets": {
+    "tako-gabi-school-portal": {
+      "hosting": {
+        "main": [
+          "tako-gabi-school-portal-2027"
+        ]
+      }
+    }
+  }
+}
