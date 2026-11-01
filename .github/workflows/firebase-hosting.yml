@@ -1,3 +1,4 @@
+
 name: Deploy Tako Gabi School Portal
 
 on:
@@ -5,17 +6,20 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy to Firebase
+      - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TAKO_GABI_SCHOOL_PORTAL }}
           channelId: live
-          projectId: tako-gabi-school-portal￼Enter
+          projectId: "tako-gabi-school-portal"
